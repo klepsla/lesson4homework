@@ -1,13 +1,47 @@
 public class Main {
     public static void main(String[] args) {
         //Задание № 1
-    int clientOS = 0;
+
+    byte clientOS = 0;
     if (clientOS == 0) {
-        System.out.println("Установите версию приложения для iOS по ссылке...");}
+        System.out.println("Установите версию приложения для iOS по ссылке...");
+    }
     if (clientOS != 1) {
-        System.out.println("Установите версию приложениядля Android по ссылке...");}
+        System.out.println("Установите версию приложениядля Android по ссылке...");
+    }
 
         //Задание № 2
+
+    short clientDeviceYear = 2015;
+        if (clientOS == 0 || clientDeviceYear < 2015) {
+            System.out.println("Установите облегчённую версию приложения для iOS по ссылке...");
+        }
+        if (clientOS == 0 || clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке...");
+        }
+
+        if (clientOS != 1 || clientDeviceYear < 2015) {
+            System.out.println("Установите облегчённую версию приложения для Android по ссылке...");
+        }
+        if (clientOS != 1 || clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке...");
+        }
+
+
+        //Задание № 3
+
+        short year = 2024;
+
+        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+            System.out.println("Год является високосным.");
+        } else {
+            System.out.println("Год не является високосным.");
+        }
+
+
+        //Задание № 4
+
+
 
     }
 
