@@ -5,27 +5,24 @@ public class Main {
         byte clientOS = 0;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке...");
-        }
-        if (clientOS == 1) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке...");
         }
 
         //Задание № 2
 
         short clientDeviceYear = 2015;
-        if (clientOS == 0 || clientDeviceYear < 2015) {
+        if (clientDeviceYear < 2015) {
             System.out.println("Установите облегчённую версию приложения для iOS по ссылке...");
-        }
-        if (clientOS == 0 || clientDeviceYear >= 2015) {
+        } else if (clientDeviceYear < 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке...");
-        }
-
-        if (clientOS == 1 || clientDeviceYear < 2015) {
+        } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегчённую версию приложения для Android по ссылке...");
-        }
-        if (clientOS == 1 || clientDeviceYear >= 2015) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке...");
         }
+
+
 
 
         //Задание № 3
